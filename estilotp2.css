@@ -1,0 +1,96 @@
+   /*normalize*/ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: auto;
+    
+    }
+    /*anular el scroll lateral indeseado*/
+    body {
+        overflow: hidden;
+    }
+    .container
+    {
+        max-width:100%;
+        padding: 0px;
+    }
+   
+   
+    div{
+        width:100%;
+        max-height: auto;
+
+    }
+    /*empieza nav*/
+    nav {
+        width: 100%;
+        margin-bottom: 5em;
+        max-width: 100%;
+    }
+ 
+    .container .navbar-toggler .navbar-toggler-icon {
+        width: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .navbar-brand {margin-left: 4rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        max-height:auto;
+        max-width: auto;
+        position: relative;
+        right: 0em;
+        left: 21.5vh;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        font-size: 2.0vh;
+        text-indent:14px;
+    }
+  
+    /*empieza cards*/
+    .card-container{
+        margin: 0px;
+        padding: auto;
+        border: 0px;
+    }
+    /*footer */
+    .menuTwo {
+        margin-top: 15px;
+        text-align: center;
+        display: block;
+        font-weight: lighter;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        padding-left: 0px;
+        background-image: -webkit-linear-gradient(147deg,rgba(5,90,114,1.00) 0%,rgba(6,15,98,1.00) 100%);
+        background-image: -moz-linear-gradient(147deg,rgba(5,90,114,1.00) 0%,rgba(6,15,98,1.00) 100%);
+        background-image: -o-linear-gradient(147deg,rgba(5,90,114,1.00) 0%,rgba(6,15,98,1.00) 100%);
+        background-image: linear-gradient(303deg,rgba(5,90,114,1.00) 0%,rgba(6,15,98,1.00) 100%);
+    }
+    .atwo{
+        list-style-type: none;
+        font-weight: normal;
+        font-size: small;
+        display: inline-block;
+        text-decoration: none;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        vertical-align: middle;
+        justify-content: space-between;
+    }
+    /*formulario*/
+    .form-control {
+        min-width: 0px;
+        margin-top: -4px;
+        position: relative;
+        text-align: left;
+        margin-right: 6px;
+        padding-left: 12px;
+        margin-bottom: 12px;
+    }
+   button {
+        width: 90%;
+        background-color: chartreuse;
+   }
+    
+   

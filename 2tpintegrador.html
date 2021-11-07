@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta lastname= "Sartori"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilotp2.css">
+        
+        <title>integrador 2</title>
+  <body>
+    <header>
+      <div id="container">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+         <div class="container-fluid">
+         <span class= "navbar-brand text-light fw-normal fs-2">
+            <img class="navbar-brand" src="codoacodo.png" alt="logo codo a codo" width="118" >
+            Conf Bs As
+         </span>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon">
+         </span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav fs-6">   
+               <li class="nav-item ">
+                  <a class="nav-link  "  href="#">La Conferencia</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link " href="#">Los oradores</a>
+               </li>
+               <li class="nav-item ">
+                  <a class="nav-link " href="#">El lugar y la fecha</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link  " href="#">Conviertete en orador</a>
+               </li>
+               <li id="nav-item">
+                  <a class="nav-link text-success active " href="#">Comprar tickets</a>
+               </li>
+            </ul>
+         </div>  
+         </div> 
+      </nav>
+      </div>
+      </header>
+
+      <div class="container col-6">
+         <div class="card-container row row justify-content-center ">
+            <div class="row row justify-content-center">
+               <div class="card border-primary text-center col-sm m-lg-1 m-2 p-2"> 
+                  <div class="card-body">
+                     <p class="card-text ms-6 "></p>
+                     <h5 class="card-title">Estudiante</h5>
+                     <p class="card-text">Tiene un descuento</p>
+                     <p class="card-text">80%</p>
+                     <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+                     </div>
+                  </div>    
+               <div class="card border-info text-center col-sm m-lg-1 m-2 p-2">
+                  <div class="card-body">
+                     <p class="card-text ms-6"></p>
+                     <h5 class="card-title">Trainee</h5>
+                     <p class="card-text">Tiene un descuento</p>
+                     <p class="card-text">50%</p>
+                     <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+                  </div>
+               </div>
+               <div class="card border-warning text-center col-sm m-lg-1 m-2 p-2">
+                  <div class="card-body">
+                     <p class="card-text ms-6"></p>
+                     <h5 class="card-title">Junior</h5>
+                     <p class="card-text">Tiene un descuento</p>
+                     <p class="card-text">15%</p>
+                     <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <form action="#" class="row justify-content-md-center" method="post" id="formularioTickets">
+         <div class="text-center mt-4">
+            <p class=" row justify-content-center fs-6 mb-0">VENTA</p>
+            <h2 CLASS="fw-bold fs-1">VALOR DE TICKET $200</h2>
+         </div>
+    
+         <div class="row row justify-content-md-center">
+            <div class="col-3 p-2">
+               <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required name="name">
+            </div>
+            <div class="col-3 p-2">
+               <input type="text " class="form-control" placeholder="Apellido" aria-label="Apellido" required name="surname"> 
+            </div>
+         </div>
+         <div class="row  justify-content-md-center">
+            <div class="col-6 p-2">
+                <input type="email" class="form-control" placeholder="Correo" id="floatingTextarea" required name="email">
+            </div>
+         </div>
+         
+            
+               <div class="row justify-content-md-center">
+                   <div class="col-3">
+                     <h5>
+                        <label for="Cantidad">Cantidad
+                        </label>
+                     </h5>
+                     
+                  </div>
+                  <div class="col-3">
+                     <h5>
+                        <label for="Categoria">Categoría
+                        </label>
+                     </h5>   
+                  </div>
+               </div>
+               <div class="row justify-content-md-center">
+                  <div class="col-3 ps-1">
+                     <input type="number" min="1" name="cantidad" id="cantidad" class="col-6 form-control" placeholder="cantidad" aria-label="Nombre" name="Cantidad">
+                  </div>
+                  <div class="col-3 ps-1">
+                     <div></div> 
+                     <select class="col-12 form-control ps-2" name="categoria" id="categoria">
+                        <option value="" id="sinDescuento">Sin descuento</option>
+                        <option value="1">Junior</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Estudiante</option>
+                     </select>
+                  </div>
+               </div>
+               <div class=" row justify-content-md-center">
+                  <h5 class="text-center bg-light col-6 ps-4">Total a pagar: <span id="ImporteAPagar"></span></h5>
+               </div>
+               <div class="row justify-content-md-center">
+                  <button  class="btn btn-success col-3 ps-15 m-2" value="Borrar" type="reset">Borrar</button>
+                  <button  class="btn btn-success col-3 ps-15 m-2" value="Resumen" type="submit" id="submit" onclick="precioFinal();">Resumen</button>
+               </div>
+      </form>
+     
+      <footer>
+        <div class="text-light ">
+            <div class="  menuTwo  ">
+                <a href="#" class="atwo p-sm-2 text-white">Preguntas<br>frecuentes</a>
+                <a href="#" class="atwo p-sm-2 text-white">Contáctenos</a>
+                <a href="#" class="atwo p-sm-2 text-white">Prensa</a>
+                <a href="#" class="atwo p-sm-2 text-white">Conferencias</a>
+                <a href="#" class="atwo p-sm-2 text-white">Términos y<br>condiciones</a>
+                <a href="#" class="atwo p-sm-2 text-white">Privacidad</a>
+                <a href="#" class="atwo p-sm-2 text-white">Estudiantes</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript tp2 tickets.js"></script>   
+  </body>
+</html>
